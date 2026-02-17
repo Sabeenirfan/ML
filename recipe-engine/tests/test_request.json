@@ -1,0 +1,5 @@
+{
+  "query": "chicken recipe",
+  "max_results": 3,
+  "generate_if_no_match": true
+}

@@ -1,0 +1,58 @@
+{
+  "expo": {
+    "name": "MealVista",
+    "slug": "mealvista",
+    "version": "1.0.0",
+    "orientation": "portrait",
+
+    "scheme": "mealvista",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.mealvista.app",
+      "infoPlist": {
+        "NSMicrophoneUsageDescription": "This app needs access to your microphone for voice commands during cooking instructions.",
+        "NSSpeechRecognitionUsageDescription": "This app uses speech recognition for voice commands like 'next', 'pause', and 'continue'."
+      }
+    },
+    "android": {
+      "package": "com.mealvista.app",
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+
+      },
+      "edgeToEdgeEnabled": true,
+      "predictiveBackGestureEnabled": false,
+      "permissions": ["RECORD_AUDIO"]
+    },
+    "web": {
+      "output": "static",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/splash-icon.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#ffffff",
+          "dark": {
+            "backgroundColor": "#000000"
+          }
+        }
+      ],
+      "expo-font"
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    },
+    "extra": {
+      "apiUrl": "http://192.168.56.1:5000",
+      "googleWebClientId": "732186339951-hb8sdkqgt70gvvb2vb78dhmkvl25p7o3.apps.googleusercontent.com"
+    }
+  }
+}

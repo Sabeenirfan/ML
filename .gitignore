@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.pyc
+venv/
+.env
+
+# Node
+node_modules/
+
+# AI / Models
+*.bin
+*.gguf
+*.pt
+*.pth
+*.onnx
+*.safetensors
+models/
+ollama/
+*.zip
+*.tar
+*.gz
+
+# Large datasets
+data/
+datasets/
+
+# System
+.DS_Store
+Thumbs.db
